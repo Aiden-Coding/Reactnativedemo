@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image, ScrollView, TextInput} from 'react-native';
 import ChildComponent from './src/component/ChildComponent';
+import AppParent from './src/component/AppParent';
 const App = () => {
   return (
     <ScrollView>
@@ -23,7 +24,8 @@ const App = () => {
         defaultValue="You can type in me"
       />
       {/* 父子通信 */}
-      <ChildComponent name="React"></ChildComponent>
+      {/* <ChildComponent name="React"></ChildComponent> */}
+      <AppParent name='PARENT'/>
     </ScrollView>
   );
 };
